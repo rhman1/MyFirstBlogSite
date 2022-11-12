@@ -1,0 +1,248 @@
+@import '/CSS/design2.css';
+@import '/CSS/header.css';
+@import '/CSS/sidebar.css';
+
+
+
+
+
+/* header section */
+.header{
+    grid-area: hd;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #02B3E4 ;
+    
+    font-family: 'Courgette', cursive;
+    color: rgb(237, 233, 242);    
+}
+
+h1{
+    padding-left: 20px;
+    background-color:#1F2932;
+}
+
+/* info section */
+.info{
+    grid-area:bd1;
+    padding-bottom: px;
+}
+
+.image{
+   
+    display: flex;
+    flex-direction:row;
+
+    align-items: center;
+    justify-content: center; 
+    
+    padding-top: 12px;
+}
+
+img{
+background-color: #1F2932;
+border: 1px solid #ddd;
+
+border-radius: 50%;
+padding: 5px;
+width: 150px;
+} 
+
+img:hover {
+box-shadow: 0 0 5px 6px rgba(0, 140, 186, 0.5);
+}
+
+/* bio section */
+
+.bio{
+    grid-area:bd2;
+    font-family: 'Roboto', sans-serif;
+    min-height:40vh;
+
+}
+
+/* Footer section */
+footer{
+    grid-area:ft;
+}
+
+.footer{    
+
+    text-align:center;
+    
+    background-color: #6D7780;
+    color:#FFFFFF;
+    
+}
+.footer a{
+    padding:12px;
+    text-align: center;
+    color: #FFF;
+
+}
+.footer h3{
+    margin:0px;
+
+    color: #000;
+    padding-bottom:10px;
+    padding-top: 10px;
+}
+
+.footer a:hover{
+    color: rgb(13, 47, 75);
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color:2px solid  black
+}
+em{
+    text-decoration: underline;
+}
+
+
+/* Screen for ipad */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: 15% 70% 15%;
+        grid-template-areas: "hd hd hd hd "
+                             "div bd1 bd2 bd2"
+                             "ft ft ft ft";
+          
+        height: 100vh;     
+        width:100%;    
+       
+    }
+    .sidbar{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        font-size: 25px;
+        padding-top: 5px;
+        gap: 40px;
+        color: azure;
+        background-color: #333;
+        
+    }
+
+    .sidbar a:hover{
+        color: #A4E4F5;
+        background-color: #555555;
+        font-size: 27px;
+        padding:20px
+    }
+
+    button{
+        border-radius: 12px;
+        padding: 5px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size:27px;
+    }
+    button:hover{
+        background-color:#555555;
+        color: #A4E4F5;
+        font-size:27px;
+        padding: 20px;
+    }
+    .footer{
+        overflow:visible;
+        overflow: scroll;
+
+    }
+}
+
+/* Screen for Labtop  */
+@media only screen and (min-width: 901px){
+
+    body{
+        font-size: 27px;
+        height:100vh;
+        width: 100%;
+        padding:0px;
+        margin:0px;
+    }
+
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: "hd hd hd hd "
+                             "div bd1 bd1 bd1"
+                             "div bd2 bd2 bd2"
+                             "ft ft ft ft";
+          
+        height: 100vh;     
+        width:100%;    
+        overflow: visible;
+
+    }
+    .sidbar{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        font-size: 30px;
+        padding: 20px;
+        gap: 40px;
+        color: azure;
+        background-color: #333;
+        
+    }
+
+    .sidbar a {
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: #333;
+    }
+    .sidbar a:hover{
+        color: #A4E4F5;
+        background-color: #555555;
+        font-size: 35px;
+        padding:20px
+    }
+
+    button{
+        border-radius: 12px;
+        padding: 5px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-size:30px;
+    }
+    button:hover{
+        background-color:#555555;
+        color: #A4E4F5;
+        font-size:35px;
+        padding: 20px;
+    }
+
+  
+    
+    .image{
+    
+        display: flex;
+        flex-direction:column;
+
+        align-items: center;
+        justify-content: center; 
+        
+        padding-top: 12px;
+    }
+
+    img{
+    background-color: #1F2932;
+    border: 1px solid #ddd;
+
+    border-radius: 50%;
+    padding: 5px;
+    width: 300px;
+    } 
+}

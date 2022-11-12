@@ -1,0 +1,16 @@
+/* Header section */
+.header{
+    grid-area: hd;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #02B3E4 ;
+    
+    font-family: 'Courgette', cursive;
+    color: rgb(237, 233, 242);    
+}
+
+h1{
+    padding-left: 20px;
+    background-color:#1F2932;
+}
+
