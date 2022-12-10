@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 5% 65% 15%;
+    grid-template-areas: "hd"
+                         "div"
+                         "bd"
+                         "ft";
+      
+    height: 100vh;         
+    width:100%;
+   
+}
+
+body{
+    background-color:  #F9F9FA; 
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+
+    margin:0px;
+    padding: 0px;
+
+    min-height: 100vh;
+    /* width:100%; */
+}
+
